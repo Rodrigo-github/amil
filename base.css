@@ -1,0 +1,284 @@
+.Top {
+  overflow: hidden;
+  background-color: #333;
+  padding: 20px 16px 23px 16px;
+  background: linear-gradient(rgb(204, 159, 123), rgb(212, 189, 155));
+}
+
+/* Style the topnav links */
+.Top a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 10px 10px 50px;
+  border-radius: 5px;
+  background-color: rgb(211, 187, 156);
+  padding: 10px;
+  width: 15%;
+  transition-duration: 1s;
+  transition-property: width;
+}
+
+.Top a:hover{
+  color: white;
+  width: 20%;
+  background-color: rgb(173, 152, 124);
+}
+
+menu{
+  text-align: center;
+}
+
+.al{
+  float: none;
+  font-size: 1.2em;
+}
+
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .Top a {
+    float: none;
+    width: 100%;
+  }
+  .Top a:hover{
+    width: 100%;
+  }
+
+  .imagen{
+    width: 100%;
+  }
+
+  .informacion
+{
+  text-align: center;
+  float: none;
+  font-size: 1.2em;
+}
+}
+
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/*-------------------------------------------------*/
+
+body{
+  background: rgb(209, 246, 255);
+  text-align: center;
+  padding: 20px;
+  min-height: 100%;
+}
+
+
+
+.Presentacion{
+  padding: 10px 10px;
+  
+  width: 50%;
+  min-width: 20%;
+  justify-content: center;
+}
+
+
+.Logo{/*Logo Amil*/
+    text-align: center;
+    min-width: 20%;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .Presentacion link{
+    float: none;
+    width: 100%;
+  }
+  .Texto{
+    text-align: center;
+    width: 50%;
+  }
+}
+
+.Texto{
+    text-align: center;
+    width: 50%;
+  }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {/*Fuentes*/
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+footer {
+  background-color: azure;
+  bottom: 0%;
+  color: #0e0d0d;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+  position: fixed;
+}
+
+.imagen{
+  
+    border-radius: 8px;
+  width: 20%;
+}
+
+
+.myDiv{
+    /*border: 5px outset red;*/
+    border-color: rgb(rgb(76, 78, 117), green, blue);
+    border-width: 10em;
+    background-color: lightblue;    
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom:10vw;
+  }
+
+  #Aside{
+    color: blueviolet;
+    width: 60%;
+    float: right;
+  }
+
+  a:link { 
+    color: black;
+    text-decoration: none; }
+
+
+  a:visited {text-decoration: none; }
+
+  
+
+  a:active
+  {
+    background: #b9bd87;
+  }
+  
+
+  #Hola{
+    color: red !important;  
+    position: relative right 40px;;
+      width: 40%;
+      float: left;
+  }
+
+a:hover{
+  color: black;
+}
+
+
+#links{
+float: right;
+padding-right: 10em;
+}
+
+.Column{
+  float: right;
+  width: 30%;
+}
+
+
+.informacion
+{
+  text-align: center;
+  float: left;
+  width: 100%;
+    left: 15%;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background: linear-gradient(rgb(204, 159, 123), rgb(212, 189, 155));
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+/*animaciones*/
