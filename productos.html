@@ -21,131 +21,103 @@
 </head>
 
 <body>
-    <header>
-        <!--Header, tiene las direcciones (3 que son de menúes)-->
-        <nav class="Top">
-            <section class="Presentacion">
-                <a class="link" href="base.html"> <i class="fas fa-home"></i> Home</a> |
-                <a class="link" href="info.html"> <i class="fas fa-info-circle"></i> Información</a> |
-                <a class="link" href="sucursales.html">Donde encontrarnos</a> |
-                <a class="link" href="registrarse.html">Registro</a>
-            </section>
-            <br>
-        </nav>
-        <section class="Logo">
-            <div class="col-sm-12">
-                <h1>Viandas Amil</h1>
+    <div class="Top">
+        <a href="base.html">
+            <div class="animate__animated animate__rubberBand"><i class="fas fa-home"></i> Página Principal</div>
+        </a>
+        <a href="info.html">
+            <div class="animate__animated animate__rubberBand"><i class="fas fa-info-circle"></i> Información</div>
+        </a>
+        <a href="sucursales.html">
+            <div class="animate__animated animate__rubberBand"><i class="fas fa-search-location"></i> Dónde encontrarnos</div>
+        </a>
+        <a href="registrarse.html">
+            <div class="animate__animated animate__rubberBand"><i class="fas fa-cart-arrow-down"></i> Hacé tu pedido</div>
+        </a>
+        <a href="productos.html">
+            <div class="animate__animated animate__rubberBand"><i class="fas fa-list"></i> Productos</div>
+        </a>
 
+        <div class="col-12">
+            <div class="Logo">
+                <h1>Viandas Amil</h1>
                 <img src="../Imagenes/rsz_logo_redondo.png" alt="Logo" width="10%">
                 <!--Dos puntos porque la carpeta que lo contiene está al mismo nivel que HTML y CSS-->
             </div>
-        </section>
-    </header>
-    <menu>
-        <!--Menú mismo con una página para registrarse/hacer un pedido-->
-
-
-        <div class="col-md-6 col-sm-6">
-            <!--Ahi vamos a poner un carrusel-->
-            <img src="../Imagenes/pepper.png" alt="placeholder">
-            <!--Centro-->
-            <br>
-            <br>
-            <a href="registrarse.html">Hacer pedido</a>
-            <br>
-            <br>
-            <br>
         </div>
+    </div>
 
-        <div class="container">
-            <h2>Nuestros productos</h2>
-            <br>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Milanesa de berenjena rellena de jamón y queso</td>
-                        <td>$350</td>
-                    </tr>
-                    <tr>
-                        <td>Ñoquis con salsa rosa</td>
-                        <td>mary@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>July</td>
-                        <td>july@example.com</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <table>
-            <!--Tabla de precios-->
-            <tr>
-                <th>Producto</th>
 
-                <th>Precio</th>
-            </tr>
-            <tr>
-                <td>Milanesa de berenjena rellena de jamón y queso</td>
-
-                <th>$350</th>
-            </tr>
-            <tr>
-                <td>Milanesa de berenjena rellena de jamón y queso</td>
-
-                <th>$350</th>
-            </tr>
-            <tr>
-                <td>Milanesa de berenjena rellena de jamón y queso</td>
-
-                <th>$350</th>
-            </tr>
-
+    <div class="container">
+        <br>
+        <h2>Nuestros productos</h2>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Milanesa de carne</td>
+                    <td>$350</td>
+                </tr>
+                <tr>
+                    <td>Milanesa de pollo</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td>Milanesa de calabaza</td>
+                    <td>$350</td>
+                </tr>
+                <tr>
+                    <td>Milanesa de berenjena</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td>Chop suey de pollo</td>
+                    <td>$350</td>
+                </tr>
+                <tr>
+                    <td>Canelones de verdura</td>
+                    <td>$350</td>
+                </tr>
+                <tr>
+                    <td>Ñoquis con salsa rosa</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                    <td>Bife</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                    <td>Pollo al horno con arroz</td>
+                    <td>$300</td>
+                </tr>
+            </tbody>
         </table>
+    </div>
+<br>
+<br>
+    <h2>Preguntar por otras opciones</h2>
+    <div>
+        <li>Pastas</li>
+        <li>Asado</li>
+        <li>Comida árabe</li>
+        <li>Pan casero</li>
+        <li>Pizza</li>
+    </div>
 
-
-        <h2>Preguntar por otras opciones</h2>
-        <ul>
-            <li>Pastas</li>
-            <li>Asado</li>
-            <li>Comida árabe</li>
-            <li>Pan casero</li>
-            <li>Pastas</li>
-        </ul>
-
-        <div class="myDiv"></div>
-        <!--Bienvenida-->
-        <h2 style="font-size: 3vw;">Bienvenido</h2>
-        <!--Texto proporcionado, tal vez todavía se ve un poco grande. Tengo que averiguar el límite de tamaño-->
-        <p style="font-size: 2vw;">Zona de arte.</p>
-        </div>
-
-        <section class="myDiv" id="Hola">
-            <!--Section Hola izquierda-->
-            <p>
-            <h1>HOLA</h1>
-            </p>
-
-        </section>
-
-        <div class="myDiv" id="Aside">
-            <h2>Bienvenido</h2>
-            <p>Zona de arte.</p>
-        </div>
-
-        <i class="fas fa-images"></i>
-        <!--Imágenes-->
+    <br>
+<br>
     </menu>
 
     <footer>
         <divclass="myfooter">
             Todos los derechos reservados
-        </section>
+            </section>
 
     </footer>
 </body>
