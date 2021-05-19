@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,10 +30,13 @@
             <div class="animate__animated animate__rubberBand"><i class="fas fa-info-circle"></i> Información</div>
         </a>
         <a href="sucursales.html">
-            <div class="animate__animated animate__rubberBand">Dónde encontrarnos</div>
+            <div class="animate__animated animate__rubberBand"><i class="fas fa-search-location"></i> Dónde encontrarnos</div>
         </a>
         <a href="registrarse.html">
-            <div class="animate__animated animate__rubberBand">Pedido</div>
+            <div class="animate__animated animate__rubberBand"><i class="fas fa-cart-arrow-down"></i> Hacé tu pedido</div>
+        </a>
+        <a href="productos.html">
+            <div class="animate__animated animate__rubberBand"><i class="fas fa-list"></i> Productos</div>
         </a>
 
         <div class="col-12">
@@ -45,40 +47,61 @@
             </div>
         </div>
     </div>
-<br>
-<h2>Registre su pedido</h2>
-        <form>
-            <label for="nombre">Nombre:</label><!-------------------Dato que pide-->
-            <input type="text" name="nombre" placeholder="Ingrese su nombre..."><br><br><!------Dato que recibe-->
+    <br>
     
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" placeholder="Ingrese su apellido..."><br><br>
-    
-            <label for="direccion">Dirección:</label>
-            <input type="text" name="direccion" placeholder="Ingrese su dirección..."><br><br><!--Dirección-->
+    <h2>Registre su pedido</h2>
+    <form action="/action_page.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <!-------------------Dato que pide-->
+        <input type="text" name="nombre" placeholder="Ingrese su nombre..."><br><br>
+        <!------Dato que recibe-->
 
-            
-            <label for="correo">E-mail:</label>
-            <input type="text" name="correo" placeholder="Ingrese su correo electrónico..."><br><br><!--Correo-->
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" placeholder="Ingrese su apellido..."><br><br>
 
-            <p>Medio de pago</p>
-            <input type="radio" name="pago" value="Efectivo"> Efectivo
-            <input type="radio" name="pago" value="Crédito"> Crédito
-            <input type="radio" name="pago" value="Débito"> Débito
-            <input type="radio" name="pago" value="Otro"> Otro
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" placeholder="Ingrese su dirección..."><br><br>
+        <!--Dirección-->
 
-            <br>
-            <br>
-            <input type="submit" value="Submit"><!--Botón-->
-    
-        </form>
+
+        <label for="correo">E-mail:</label>
+        <input type="text" name="correo" placeholder="Ingrese su correo electrónico..."><br><br>
+        <!--Correo-->
+
+        <p>
+        <h3>Medio de pago</h3>
+        </p>
+        <input type="radio" name="pago" value="Efectivo"> Efectivo
+        <input type="radio" name="pago" value="Crédito"> Crédito
+        <input type="radio" name="pago" value="Débito"> Débito
+        <input type="radio" name="pago" value="Otro"> Otro<br><br>
+
+        <select id="producto" name="producto">
+            <option value="mil">Milanesa de carne</option>
+            <option value="milpo">Milanesa de pollo</option>
+            <option value="milcal">Milanesa de calabaza</option>
+            <option value="milber">Milanesa de berenjena</option>
+            <option value="chop">Chop suey de pollo</option>
+            <option value="can">Canelones de verdura</option>
+            <option value="noq">Ñoquis</option>
+            <option value="bif">Bife</option>
+            <option value="polaz">Pollo al horno con arroz</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <!--Botón-->
+        <br>
+        <br>
+    </form>
 
     </menu>
-    
+
     <footer>
         <section class="myfooter">
             Todos los derechos reservados
         </section>
     </footer>
 </body>
+
 </html>
