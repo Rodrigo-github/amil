@@ -36,7 +36,6 @@ menu{
   font-size: 1.2em;
 }
 
-
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .Top a {
@@ -59,7 +58,26 @@ menu{
 }
 }
 
+@media screen and (max-width: 700px) {
+  .Top a {
+    float: none;
+    width: 100%;
+  }
+  .Top a:hover{
+    width: 100%;
+  }
+
+  .imagen{
+    width: 70%;
+  }
+
+}
+
 @media screen and (max-width: 992px) {
+  footer{
+    color: black;
+  }
+
   .column {
     width: 50%;
   }
